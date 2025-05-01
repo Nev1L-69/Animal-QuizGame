@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Elephants can fly.",
+    "correctAnswer": false,
+    "image": "",
+    "audio": "",
+    "video": ""
+  },
+  {
+    "question": "The animal in the picture can swim.",
+    "correctAnswer": true,
+    "image": "Images/penguin",
+    "audio": "",
+    "video": ""
+  },
+  {
+    "question": "You hear a lion roaring.",
+    "correctAnswer": true,
+    "image": "",
+    "audio": "Audio/lion_roar",
+    "video": ""
+  },
+  {
+    "question": "This is a hippo",
+    "correctAnswer": false,
+    "image": "Images/elephant",
+    "audio": "",
+    "video": ""
+  },
+  {
+    "question": "Bats are mammals.",
+    "correctAnswer": true,
+    "image": "",
+    "audio": "",
+    "video": ""
+  },
+  {
+    "question": "The bird shown in the video is a penguin.",
+    "correctAnswer": true,
+    "image": "",
+    "audio": "",
+    "video": "Videos/penguin"
+  },
+  {
+    "question": "Dogs can speak human languages.",
+    "correctAnswer": false,
+    "image": "",
+    "audio": "",
+    "video": ""
+  },
+  {
+    "question": "You hear the sound of a chiken.",
+    "correctAnswer": false,
+    "image": "",
+    "audio": "Audio/eagle_sound",
+    "video": ""
+  },
+  {
+    "question": "This is a dolphin.",
+    "correctAnswer": true,
+    "image": "Images/dolphin",
+    "audio": "",
+    "video": ""
+  },
+  {
+    "question": "Snakes have legs.",
+    "correctAnswer": false,
+    "image": "",
+    "audio": "",
+    "video": ""
+  }
+]

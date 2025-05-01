@@ -11,12 +11,16 @@ public class GameController1 : MonoBehaviour
     public Button[] optionButtons;
     public TextMeshProUGUI scoreText;
     public GameObject winPanel;
-    public Image questionImage; // для отображения картинки вопроса
+    public Image questionImage;
+
+    public AudioSource audioSource; // новый AudioSource
+    public AudioClip correctSound;  // звук правильного ответа
+    public AudioClip wrongSound;    // звук неправильного ответа
 
     private List<QuestionData> questions;
     private int currentQuestionIndex = 0;
     private int score = 0;
-    private int requiredScore = 7; // минимум 7 из 10
+    private int requiredScore = 7;
     private bool isAnswering = false;
 
     void Start()
@@ -46,7 +50,6 @@ public class GameController1 : MonoBehaviour
         QuestionData q = questions[currentQuestionIndex];
         questionText.text = q.question;
 
-        // Показать изображение, если указано
         if (!string.IsNullOrEmpty(q.image))
         {
             questionImage.enabled = true;
@@ -87,14 +90,24 @@ public class GameController1 : MonoBehaviour
         {
             score++;
             optionButtons[selectedIndex].GetComponent<Image>().color = Color.green;
+            PlaySound(correctSound);
         }
         else
         {
             optionButtons[selectedIndex].GetComponent<Image>().color = Color.red;
             optionButtons[q.correctIndex].GetComponent<Image>().color = Color.green;
+            PlaySound(wrongSound);
         }
 
         StartCoroutine(NextQuestionAfterDelay(1.5f));
+    }
+
+    void PlaySound(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 
     IEnumerator NextQuestionAfterDelay(float delay)
@@ -110,7 +123,6 @@ public class GameController1 : MonoBehaviour
         string result = score >= requiredScore ? "Level Passed!" : "Try Again.";
         winPanel.GetComponentInChildren<TextMeshProUGUI>().text = result + "\nScore: " + score;
 
-        // Сохраняем максимальный счёт для уровня 1
         int previousHighScore = PlayerPrefs.GetInt("Level1_HighScore", 0);
         if (score > previousHighScore)
         {
