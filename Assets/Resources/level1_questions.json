@@ -1,0 +1,63 @@
+[
+    {
+      "question": "Which animal is the largest land mammal?",
+      "options": ["Elephant", "Lion", "Hippo", "Giraffe"],
+      "correctIndex": 0,
+      "image": ""
+    },
+    {
+      "question": "Which bird cannot fly?",
+      "options": ["Penguin", "Sparrow", "Owl", "Eagle"],
+      "correctIndex": 0,
+      "image": ""
+    },
+    {
+      "question": "Which animal is known as the king of the jungle?",
+      "options": ["Tiger", "Bear", "Lion", "Cheetah"],
+      "correctIndex": 2,
+      "image": ""
+    },
+    {
+      "question": "What do koalas mainly eat?",
+      "options": ["Eucalyptus leaves", "Bananas", "Grass", "Bamboo"],
+      "correctIndex": 0,
+      "image": ""
+    },
+    {
+      "question": "What animal is shown in the picture?",
+      "options": ["Tiger", "Lion", "Leopard", "Jaguar"],
+      "correctIndex": 0,
+      "image": "Images/tiger"
+    },
+    {
+      "question": "What is this sea creature?",
+      "options": ["Octopus", "Shark", "Starfish", "Crab"],
+      "correctIndex": 0,
+      "image": "Images/octopus"
+    },
+    {
+      "question": "Which animal can fly?",
+      "options": ["Bat", "Rabbit", "Elephant", "Cheetah"],
+      "correctIndex": 0,
+      "image": ""
+    },
+    {
+      "question": "Identify this black-and-white animal.",
+      "options": ["Zebra", "Panda", "Skunk", "Badger"],
+      "correctIndex": 0,
+      "image": "Images/zebra"
+    },
+    {
+      "question": "Guess the animal in the picture.",
+      "options": ["Penguin", "Duck", "Goose", "Puffin"],
+      "correctIndex": 0,
+      "image": "Images/penguin"
+    },
+    {
+      "question": "What is a baby frog called?",
+      "options": ["Tadpole", "Cub", "Chick", "Larva"],
+      "correctIndex": 0,
+      "image": ""
+    }
+  ]
+  
